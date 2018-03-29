@@ -1,0 +1,9 @@
+# Install gems without docs by default
+---
+gem: --no-ri --no-rdoc
+
+:benchmark: false
+:verbose: false
+:update_sources: true
+:bulk_threshold: 1000
+:backtrace: false
