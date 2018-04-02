@@ -16,7 +16,7 @@
   "files.autoSave": "onFocusChange",
   "files.encoding": "utf8",
   // The default end of line character. Use \n for LF and \r\n for CRLF.
-  "files.eol": "\r\n",
+  "files.eol": "\n",
   "files.exclude": {
       "**/.git": true,
       "**/.svn": true,
@@ -47,4 +47,5 @@
   "powershell.powerShellExePath": "C:\\Program Files\\PowerShell\\6.0.2\\pwsh.exe",
   "explorer.confirmDelete": false,
   "workbench.startupEditor": "newUntitledFile",
+  "window.zoomLevel": -1,
 }
