@@ -12,6 +12,7 @@
 	commit = verbose
 	autocrlf = true
 	safecrlf = false
+	editor = code-insiders --wait
 [commit]
 	gpgsign = true
 	verbose = true

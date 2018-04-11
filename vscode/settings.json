@@ -47,5 +47,20 @@
   "powershell.powerShellExePath": "C:\\Program Files\\PowerShell\\6.0.2\\pwsh.exe",
   "explorer.confirmDelete": false,
   "workbench.startupEditor": "newUntitledFile",
+
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  },
+
+  "prettier.printWidth":120,
+  "prettier.singleQuote":true,
+  "prettier.tabWidth": 2,
   "window.zoomLevel": -1,
 }

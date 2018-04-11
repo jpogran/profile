@@ -12,6 +12,10 @@ $config = @(
     Link   = "~/src/my/profile/pwsh/profile.ps1"
   },
   @{
+    Source = "~/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1"
+    Link   = "~/src/my/profile/pwsh/profile.ps1"
+  },
+  @{
     Source = "~/.gemrc"
     Link   = "~/src/my/profile/ruby/gemrc"
   },
