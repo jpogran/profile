@@ -62,5 +62,5 @@
   "prettier.printWidth":120,
   "prettier.singleQuote":true,
   "prettier.tabWidth": 2,
-  "window.zoomLevel": -1,
+  "explorer.confirmDragAndDrop": false,
 }
