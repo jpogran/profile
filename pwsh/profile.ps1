@@ -19,7 +19,6 @@ function bi { bundle install --path .bundle/gems --without system_tests }
 function be { bundle exec $args }
 
 Set-Alias -Name git   -Value hub
-Set-Alias -Name code  -Value code-insiders
 Set-Alias -Name time  -Value Measure-Command
 Set-Alias -Name ss    -Value Select-String
 Set-Alias -Name count -Value Measure-Object
