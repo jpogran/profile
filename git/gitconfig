@@ -1,7 +1,7 @@
 [user]
 	name = jpogran
 	email = james.pogran@puppet.com
-	signingkey = 45CAED724A0A0B34
+	signingkey = F4E0ACCE8C5E151B
 [shell]
 	username = jpogran
 [github]
@@ -23,7 +23,7 @@
 	interactive = auto
 	diff = auto
 [gpg]
-	program = C:\\Program Files (x86)\\GNU\\GnuPG\\gpg.exe
+	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
 [push]
 	default = current
 [pull]
