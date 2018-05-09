@@ -28,6 +28,14 @@ $config = @(
     Link   = "~/src/profile/vim/vimrc"
   },
   @{
+    Source = "$($env:APPDATA)\Code\User\settings.json"
+    Link   = "~/src/profile/vscode/settings.json"
+  },
+  @{
+    Source = "$($env:APPDATA)\Code\User\keybindings.json"
+    Link   = "~/src/profile/vscode/keybindings.json"
+  },
+  @{
     Source = "$($env:APPDATA)\Code - Insiders\User\settings.json"
     Link   = "~/src/profile/vscode/settings.json"
   },
