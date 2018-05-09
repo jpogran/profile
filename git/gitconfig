@@ -1,7 +1,7 @@
 [user]
 	name = jpogran
 	email = james.pogran@puppet.com
-	signingkey = 4A0A0B34
+	signingkey = 45CAED724A0A0B34
 [shell]
 	username = jpogran
 [github]
@@ -12,7 +12,7 @@
 	commit = verbose
 	autocrlf = true
 	safecrlf = false
-	editor = code-insiders --wait
+	editor = code -n --wait
 [commit]
 	gpgsign = true
 	verbose = true
@@ -23,7 +23,7 @@
 	interactive = auto
 	diff = auto
 [gpg]
-	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
+	program = C:\\Program Files (x86)\\GNU\\GnuPG\\gpg.exe
 [push]
 	default = current
 [pull]
@@ -32,10 +32,13 @@
 	autoStash = true
 [rerere]
 	enabled = true
+	[diff]
 [diff]
+  tool = default-difftool
 	renames = copies
 [difftool]
 	prompt = false
+  cmd = code --wait --diff $LOCAL $REMOTE
 [mergetool]
 	prompt = false
 	keepBackup = false
