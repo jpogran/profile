@@ -1,20 +1,5 @@
-# $env:Path = 'C:\Users\jpogran\Downloads\mingit\cmd;' + $env:Path
-# $env:Path = 'C:\Program Files\Git\bin;' + $env:Path
-# $env:Path = "C:\Users\jpogran\downloads\PortableGit\bin;" + $env:path
+
 [Environment]::SetEnvironmentVariable("VAGRANT_DEFAULT_PROVIDER", "hyperv", "User")
-
-Import-Module -Name PSReadline -Version 2.0.0
-Import-Module "$($home)/documents/windowspowershell/modules/posh-git/src/posh-git.psd1"
-# Import-Module -Name dircolors
-# Import-Module -Name PSConsoleTheme
-
-# Set-ConsoleTheme -Name 'Solarized Dark'
-
-$global:GitPromptSettings.DefaultPromptBeforeSuffix.Text = ' $([DateTime]::now.ToString("MM-dd HH:mm:ss"))'
-$global:GitPromptSettings.DefaultPromptWriteStatusFirst  = $true
-$global:GitPromptSettings.DefaultPromptBeforeSuffix.Text = '`n$([DateTime]::now.ToString("MM-dd HH:mm:ss"))'
-$global:GitPromptSettings.DefaultPromptBeforeSuffix.ForegroundColor = 0x808080
-$global:GitPromptSettings.DefaultPromptSuffix = ' $((Get-History -Count 1).id + 1)$(">" * ($nestedPromptLevel + 1)) '
 
 function .. { Set-Location -Path .. }
 function la { Get-ChildItem -Force }
@@ -26,11 +11,3 @@ Set-Alias -Name time  -Value Measure-Command
 Set-Alias -Name ss    -Value Select-String
 Set-Alias -Name count -Value Measure-Object
 Set-Alias -Name ll    -Value Get-ChildItem
-
-$env:chocolateyUseWindowsCompression = 'true'
-
-# Chocolatey profile
-$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
-if (Test-Path($ChocolateyProfile)) {
-  Import-Module "$ChocolateyProfile"
-}
