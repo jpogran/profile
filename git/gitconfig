@@ -32,7 +32,6 @@
 	autoStash = true
 [rerere]
 	enabled = true
-	[diff]
 [diff]
   tool = default-difftool
 	renames = copies
