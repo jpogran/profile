@@ -12,8 +12,12 @@ $config = @(
     Link   = "~/src/profile/pwsh/profile.ps1"
   },
   @{
-    Source = "~/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1"
-    Link   = "~/src/profile/pwsh/profile.ps1"
+    Source = "~/Documents/PowerShell/Microsoft.PowerShell_profile.ps1"
+    Link   = "~/src/profile/pwsh/Microsoft.PowerShell_profile.ps1"
+  },
+  @{
+    Source = "~/Documents/PowerShell/Microsoft.VSCode_profile.ps1"
+    Link   = "~/src/profile/pwsh/Microsoft.VSCode_profile.ps1"
   },
   @{
     Source = "~/.gemrc"
