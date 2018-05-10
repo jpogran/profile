@@ -42,9 +42,9 @@
     "**/.bundle": true,
   },
 
-  "terminal.external.windowsExec": "C:\\Program Files\\PowerShell\\6.0.2\\pwsh.exe",
-  "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\6.0.2\\pwsh.exe",
-  "powershell.powerShellExePath": "C:\\Program Files\\PowerShell\\6.0.2\\pwsh.exe",
+  "terminal.external.windowsExec": "C:\\Program Files\\PowerShell\\6-preview\\pwsh.exe",
+  "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\6-preview\\pwsh.exe",
+  "powershell.powerShellExePath": "C:\\Program Files\\PowerShell\\6-preview\\pwsh.exe",
   "explorer.confirmDelete": false,
   "workbench.startupEditor": "newUntitledFile",
 
