@@ -1,4 +1,5 @@
 {
+  "telemetry.enableTelemetry": false,
   "editor.dragAndDrop": false,
   "editor.emptySelectionClipboard": false,
   "editor.fontFamily": "'Fira Code Retina','FuraCode NF Retina Medium', Consolas, 'Courier New', monospace",
@@ -12,8 +13,10 @@
   "editor.rulers": [80,120],
   "editor.tabSize": 2,
   "editor.trimAutoWhitespace": true,
+  "editor.autoIndent": true,
 
   "files.autoSave": "onFocusChange",
+  "files.defaultLanguage": "markdown",
   "files.encoding": "utf8",
   // The default end of line character. Use \n for LF and \r\n for CRLF.
   "files.eol": "\n",
@@ -42,11 +45,12 @@
     "**/.bundle": true,
   },
 
-  "terminal.external.windowsExec": "C:\\Program Files\\PowerShell\\6-preview\\pwsh.exe",
-  "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\6-preview\\pwsh.exe",
-  "powershell.powerShellExePath": "C:\\Program Files\\PowerShell\\6-preview\\pwsh.exe",
+  // "terminal.external.windowsExec": "C:\\Program Files\\PowerShell\\6-preview\\pwsh.exe",
+  // "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\6-preview\\pwsh.exe",
+  // "powershell.powerShellExePath": "C:\\Program Files\\PowerShell\\6-preview\\pwsh.exe",
   "explorer.confirmDelete": false,
   "workbench.startupEditor": "newUntitledFile",
+  "window.title": "${dirty}${separator}${activeEditorLong}${separator}${appName}",
 
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
@@ -63,4 +67,17 @@
   "prettier.singleQuote":true,
   "prettier.tabWidth": 2,
   "explorer.confirmDragAndDrop": false,
+  "window.zoomLevel": 0,
+  "gitlens.historyExplorer.enabled": true,
+
+  "[powershell]":{
+    // The default end of line character. Use \n for LF and \r\n for CRLF.
+    "files.eol": "\r\n",
+  },
+  "workbench.colorTheme": "Winter is Coming (Dark)",
+  // "puppet.installDirectory":"C:\\Program Files\\Puppet Labs\\DevelopmentKit",
+  // "puppet.installType":"pdk",
+
+  // "puppet.languageclient.minimumUserLogLevel": "debug",
+  // "puppet.languageserver.debugFilePath": "c:/users/jpogran/desktop/foo.log"
 }
