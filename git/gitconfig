@@ -13,6 +13,7 @@
 	autocrlf = true
 	safecrlf = false
 	editor = code --wait
+	eol = true
 [commit]
 	gpgsign = true
 	verbose = true
