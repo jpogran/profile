@@ -12,6 +12,10 @@ $config = @(
     Link   = "~/src/jpogran/profile/pwsh/profile.ps1"
   },
   @{
+    Source = "~/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1"
+    Link   = "~/src/jpogran/profile/pwsh/Microsoft.PowerShell_profile.ps1"
+  },
+  @{
     Source = "~/Documents/PowerShell/Microsoft.PowerShell_profile.ps1"
     Link   = "~/src/jpogran/profile/pwsh/Microsoft.PowerShell_profile.ps1"
   },
