@@ -1,1 +1,5 @@
-Import-Module "$($home)/documents/powershell/modules/posh-git/src/posh-git.psd1"
+Import-Module -Name PSReadline -Version 2.0.0
+Import-Module posh-git
+Import-Module oh-my-posh
+Set-Theme agnoster
+$DefaultUser = 'jpogran'
