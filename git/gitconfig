@@ -1,69 +1,48 @@
-[user]
-	name = jpogran
-	email = james.pogran@puppet.com
-	signingkey = F4E0ACCE8C5E151B
-[shell]
-	username = jpogran
-[github]
-	username = jpogran
-[hub]
-	protocol = https
 [core]
-	commit = verbose
-	autocrlf = true
-	safecrlf = false
-	editor = code --wait
-	eol = true
+  editor = code --wait
+  autorcrlf = input
+  commit = verbose
+	autocrlf = input
+[user]
+  name = James Pogran
+  email = james.pogran@outlook.com
+[shell]
+  username = jpogran
+[github]
+  username = jpogran
+[hub]
+  protocol = https
 [commit]
-	gpgsign = true
-	verbose = true
+  verbose = true
 [color]
-	ui = auto
-	status = auto
-	branch = auto
-	interactive = auto
-	diff = auto
-[gpg]
-	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
-[push]
-	default = current
-[pull]
-	rebase = true
-[rebase]
-	autoStash = true
-[rerere]
-	enabled = true
+  ui = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  diff = auto
 [diff]
   tool = default-difftool
-	renames = copies
-[difftool]
-	prompt = false
+  renames = copies
+[difftool "default-difftool"]
+  prompt = false
   cmd = code --wait --diff $LOCAL $REMOTE
 [mergetool]
-	prompt = false
-	keepBackup = false
+  prompt = false
+  keepBackup = false
 [alias]
-  commit   = commit -S -v
-  cm       = commit -S -m
-  l        = log --pretty=\"%C(magenta)%h%C(red)%d %C(yellow)%ar %C(green)%s %C(yellow)(%an)\"
+  amend    = commit --amend --reuse-message=HEAD
+  branches = branch -a
+  co       = checkout
+  cob      = checkout -b
+  cot      = checkout -t
+  commit   = commit -v
+  cm       = commit -v -m
+  l        = log  -n 20 --pretty=\"%C(magenta)%h%C(red)%d %C(yellow)%ar %C(green)%s %C(yellow)(%an)\"
   lg       = log --graph --pretty=\"%C(magenta)%h%C(red)%d %C(yellow)%ar %C(green)%s %C(yellow)(%an)\"
   ll       = log --oneline -n 20
   ln       = "log --pretty=format:'%C(yellow)%h%C(reset) %s %C(cyan)%cr%C(reset) %C(blue)%an%C(reset) %C(green)%d%C(reset)' --name-only --date-order"
   s        = status -s
   st       = status
-  amend    = commit --amend --reuse-message=HEAD
-  branches = branch -a
   tags     = tag -l
   remotes  = remote -v
-  co       = checkout
-  cob      = checkout -b
-  cot      = checkout -t
   undo     = reset HEAD~1 --mixed
-#   pr       = "!f() { git fetch origin pull//head: && git co ; }; f"
-#   pr       = "!f() { git fetch -fu ${2:-$(git remote |grep ^origin || echo origin)} refs/pull/$1/head:pr/$1 && git checkout pr/$1; }; f"
-#   pr-clean = "!git for-each-ref refs/heads/pr/* --format='%(refname)' | while read ref ; do branch=${ref#refs/heads/} ; git branch -D $branch ; done"
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
