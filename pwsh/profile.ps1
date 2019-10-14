@@ -9,6 +9,7 @@ Import-Module -Name Terminal-Icons
 # $GitPromptSettings.DefaultPromptBeforeSuffix.ForegroundColor = 0x808080
 # $GitPromptSettings.DefaultPromptSuffix = ' $((Get-History -Count 1).id + 1)$(">" * ($nestedPromptLevel + 1)) '
 Set-Theme -Name Paradox
+$defaultuser = 'james'
 
 function .. { Set-Location -Path .. }
 function la { Get-ChildItem -Force }
@@ -19,7 +20,7 @@ Set-Alias -Name ss    -Value Select-String
 Set-Alias -Name count -Value Measure-Object
 Set-Alias -Name ll    -Value Get-ChildItem
 
-Set-PSReadLineKeyHandler -Description 'Edit current directory with Visual Studio Code' -Chord Ctrl+Shift+E  -ScriptBlock { code . }
+# Set-PSReadLineKeyHandler -Description 'Edit current directory with Visual Studio Code' -Chord Ctrl+Shift+E  -ScriptBlock { code . }
 
 Update-TypeData `
   -TypeName 'Microsoft.Management.Infrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetTCPConnection' `
